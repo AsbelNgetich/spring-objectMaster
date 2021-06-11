@@ -11,10 +11,10 @@ public class Human {
 	//class constructor
 	public Human() {
 		super();
-		this.strength = 3;
-		this.stealth = 3;
-		this.intelligence = 3;
-		this.health = 100;
+		this.setStrength(3);;
+		this.setStealth(3);
+		this.setIntelligence(3);
+		this.setHealth(100);
 	}
 	
 	//Getters and setters
@@ -39,7 +39,7 @@ public class Human {
 	
 	
 	
-	//attack method
+	
 	public int getHealth() {
 		return health;
 	}
@@ -47,7 +47,8 @@ public class Human {
 	public void setHealth(int health) {
 		this.health = health;
 	}
-
+	
+	//attack method
 	public void attack(Human opps) {
 		
 		opps.setHealth(opps.getHealth()-this.strength);
